@@ -4,19 +4,35 @@
 
 This document describes the architecture of the Collaborative Canvas project. It explains how drawing data flows between users, how WebSocket communication is handled, how undo and redo work globally, and how simultaneous drawing is managed.
 
-
 ## Data Flow Diagram
 
 ```text
 User
-  ↓
-Browser (Client)
-  ↓ drawing_step (WebSocket)
+  |
+  | Mouse actions (draw / undo / redo / clear)
+  v
+Client (Browser + Canvas)
+  |
+  | drawing_step
+  | undo / redo
+  | clear_canvas
+  | cursor_move
+  v
 Server (Node.js + Socket.IO)
-  ↓ broadcast
-Other Connected Browsers
+  |
+  | Store and update data
+  v
+Data Stores
+  - strokeHistory
+  - redoStack
+  - cursorPositions
+  |
+  | drawing_step
+  | rebuild_canvas
+  | cursor_update
+  v
+Other Connected Clients
 ```
-
 
 ## WebSocket Protocol
 
