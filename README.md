@@ -2,6 +2,9 @@
 
 This project is a real-time collaborative drawing  application where multiple users can draw on the same canvas at same time, and users can able to undo/redo  others drawing. This project uses Socket.IO for real-time synchronization.
 
+## Live Demo
+https://collaborative-canvas-production-6509.up.railway.app/
+
 ## Features
 
 - Real-time drawing synchronization between all users.
