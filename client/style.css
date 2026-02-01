@@ -1,0 +1,91 @@
+.bg-container {
+  font-family: "Roboto";
+  padding: 15px;
+  height: 100vh;
+  position: relative;
+}
+
+.drawing-tools {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  font-family: "Roboto";
+  background-color: #ecf0f1;
+}
+
+.brush {
+  padding: 10px;
+  border: 1px solid violet;
+  margin-right: 8px;
+  cursor:crosshair;
+}
+
+.eraser {
+  padding: 10px;
+  cursor: cell;
+  background-color:whitesmoke;
+  border:1px solid black;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-right: 8px
+}
+
+.stroke-width {
+  width: 150px;
+  margin-left: 50px;
+  height: 6px;
+  font-family: "Roboto";
+}
+
+.colors-container {
+  margin-left: 30px;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+
+.canvas-board {
+  background-color: white;
+  border: 2px solid red;
+}
+
+.undo{
+  margin-right: 8px;
+  background-color: #0c53a9;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  height: 30px;
+  width: 50px;
+  cursor: pointer;
+
+}
+
+.redo{ 
+  margin-right: 8px;
+  background-color: #d543c48d;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  color: #f3ececd0;
+  font-family: "Roboto";
+  font-size: 14px;
+  height: 30px;
+  width: 50px; 
+  cursor: pointer;
+}
+
+.clear{
+  margin-right: 8px;
+  background-color: #f54242;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 12px;
+  height: 50px;
+  width: 90px; 
+  cursor: pointer;
+}
+
